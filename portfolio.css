@@ -1,0 +1,601 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.sidebar.active ~ .main-content {
+    left: 250px;
+    width: cal(100% - 250px);
+}
+
+.sidebar #btn {
+    position: absolute;
+    color: #271c1f;
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.sidebar.active #btn {
+    left: 90%;
+}
+
+
+.sidebar.active .top .logo {
+    opacity: 1;
+}
+
+.top .logo i {
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+
+.user p {
+    color: #ffffff;
+    opacity: 1;
+    margin-left: 1rem;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.sidebar p {
+    opacity: 0;
+}
+
+.sidebar.active p {
+    opacity: 1;
+}
+
+.sidebar ul li a:hover {
+    font-size:x-large;
+}
+
+.sidebar .nav-item {
+    opacity: 0;
+}
+
+.sidebar.active .nav-item {
+    opacity: 1;
+}
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+    border-radius: .6rem;
+    padding: .4rem 1.2rem;
+    line-height: 1.8rem;
+    z-index: 20;
+    opacity: 0;
+}
+
+.sidebar ul li:hover .tooltip {
+    opacity: 1;
+}
+
+.sidebar.active ul li .tooltip {
+    display: none;
+}
+
+.main-content {
+    position: relative;
+    background-color: #ffffff;
+    min-height: 100vh;
+    top: 0;
+    left: 80ppx;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+    padding: 1rem;
+}
+
+
+/* quiries */
+
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+.containerAbout {
+    display: flex;
+    justify-content: space-between;
+    height: 185vh;
+}
+.containerAbout1 {
+    margin: 0px 0px;
+}
+
+.profile{
+    position: fixed;
+    top: 50px;
+    right: 75px;
+    width: 50vw;
+    border-radius:150px;
+    height: 60vh;
+}
+
+.sidebar.active {
+    width: 150px;
+}
+
+.sidebar ul li a:hover {
+    font-size:large;
+}
+
+.sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 50px;
+    margin-top: 10px;
+}
+
+.sidebar .top .logo {
+    color: #ffffff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    font-size: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    font-size: 15px;
+}
+
+.header_text {
+    font-size: 35px;
+    position: relative;
+    top: 420px;
+    right: 30px;
+    color: #ffffff;
+}
+.header_text1 {
+    font-size: 35px;
+    position: relative;
+    top: 420px;
+    right: 80px;
+    color: #fbfdff;
+}
+.content{
+    margin-left: 55px;
+    color: #040B14;
+}
+.title {
+    font-size: 5vw;
+    color: #0f3e7b;
+}
+.textcontent{
+    font-size: 2.3vw;
+}
+.photoabout{
+    width: 65vw;
+    height: 60vh;
+    border-radius:100px;
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.abouttext{
+    font-size: 3.5vw;
+}
+.abouttext1{
+    font-size: 2.5vw;
+}
+.abouttext2{
+    font-size: 2.3vw;
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    height: 105vh;
+}
+.containerResume {
+    display: flex;
+    justify-content: space-between;
+    height: 168vh;
+}
+.containerResume1 {
+    margin: 5px 10px 50px 70px;    
+}
+.textcontent1{
+    font-size: 2.5vw;
+}
+.sidebar ul li a i {
+    min-width: 50px;
+    text-align: left;
+    height: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    font-size: 10px;
+}
+.sidebar {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60px;
+    background-color: #040B14;
+    padding: 0.4rem 0.8rem;
+    transition: all 0.5s ease;
+    position: fixed;
+}
+.user-img {
+    width: 30px;
+    border-radius: 100%;
+    border: 1px solid whitesmoke;
+}
+.sidebar ul li a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    font-size: 10px;
+}
+.containerPorfolio{
+    display: flex;
+    justify-content: space-between;
+    height: 250vh;
+}
+.containerPorfolio1 {
+    margin: 5px 10px 50px 70px;    
+}
+.containerContacts {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+.containerContacts1 {
+    margin: 10px 0px 0px 70px;    
+}
+
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .containerHeader {
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    .containerAbout {
+        display: flex;
+        justify-content: space-between;
+        height: 210vh;
+    }
+    .containerAbout1 {
+        margin: 0px 10px;
+    }
+    
+    .profile{
+        position: fixed;
+        top: 50px;
+        right: 125px;
+        width: 50vw;
+        border-radius:150px;
+        height: 60vh;
+    }
+    
+    .sidebar.active {
+        width: 230px;
+    }
+    
+    .sidebar ul li a:hover {
+        font-size:large;
+    }
+    
+    .sidebar ul li {
+        position: relative;
+        list-style-type: none;
+        height: 50px;
+        width: 90%;
+        margin: 0.8rem auto;
+        line-height: 50px;
+        margin-top: 10px;
+    }
+    
+    .sidebar .top .logo {
+        color: #ffffff;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        align-items: center;
+        pointer-events: none;
+        opacity: 0;
+        font-size: 10px;
+    }
+    
+    .user {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        font-size: 17px;
+    }
+    
+    .header_text {
+        font-size: 45px;
+        position: relative;
+        top: 400px;
+        right: 100px;
+        color: #ffffff;
+    }
+    .header_text1 {
+        font-size: 45px;
+        position: relative;
+        top: 400px;
+        right: 170px;
+        color: #fbfdff;
+    }
+    .content{
+        margin-left: 55px;
+        color: #040B14;
+    }
+    .title {
+        font-size: 5vw;
+        color: #0f3e7b;
+    }
+    .textcontent{
+        font-size: 2.3vw;
+    }
+    .photoabout{
+        width: 65vw;
+        height: 60vh;
+        border-radius:100px;
+        margin-top: 5px;
+        margin-left: 80px;
+        margin-bottom: 20px;
+    }
+    .abouttext{
+        font-size: 3.5vw;
+    }
+    .abouttext1{
+        font-size: 2.5vw;
+    }
+    .abouttext2{
+        font-size: 2.3vw;
+        text-align: center;
+    }
+    .container2 {
+        display: flex;
+        justify-content: space-between;
+        height: 105vh;
+    }
+    .containerResume {
+        display: flex;
+        justify-content: space-between;
+        height: 205vh;
+    }
+    .containerResume1 {
+        margin: 5px 10px 50px 70px;    
+    }
+    .textcontent1{
+        font-size: 2.5vw;
+    }
+    .sidebar ul li a i {
+        min-width: 50px;
+        text-align: left;
+        height: 50px;
+        border-radius: 10px;
+        line-height: 50px;
+        font-size: 13px;
+    }
+    .sidebar {
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 65px;
+        background-color: #040B14;
+        padding: 0.4rem 0.8rem;
+        transition: all 0.5s ease;
+        position: fixed;
+    }
+    .user-img {
+        width: 30px;
+        border-radius: 100%;
+        border: 1px solid whitesmoke;
+    }
+    .sidebar ul li a {
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 0.8rem;
+        font-size: 13px;
+    }
+    .containerPorfolio {
+        display: flex;
+        justify-content: space-between;
+        height: 320vh;
+    }
+    .containerPorfolio1 {
+        margin: 10px 30px 0px 90px;    
+    }
+    .containerContacts {
+        height: 200vh;
+    }
+    .containerContacts1 {
+        margin: 10px 140px 0px 200px;    
+    }
+
+}
+
+/* big screen */
+@media only screen and (min-width: 1000px) {
+    .containerHeader {
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    .containerAbout {
+        display: flex;
+        justify-content: space-between;
+        height: 75vh;
+    }
+    .containerAbout1{
+        margin: 10px 110px;
+    }
+    .sidebar.active {
+        width: 215px;
+    }
+    .sidebar ul li a:hover {
+        font-size:x-large;
+    }
+    .profile{
+        position: fixed;
+        top: 70px;
+        right: 50px;
+        width: 30vw;
+        border-radius:250px;
+        height: 80vh;
+        
+    }
+    .sidebar ul li {
+        position: relative;
+        list-style-type: none;
+        height: 50px;
+        width: 90%;
+        margin: 0.8rem auto;
+        line-height: 50px;
+        font-size: 10px;
+        margin-top: 1px;
+    }
+    .sidebar .top .logo {
+        color: #ffffff;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        align-items: center;
+        pointer-events: none;
+        opacity: 0;
+        font-size: 20px;
+        margin-bottom: 00px;
+    }
+    .user {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    .header_text {
+        font-size: 100px;
+        position: relative;
+        top: 180px;
+        right: 610px;
+        float: right;
+        color: #f4f5f7;
+    }
+    .header_text1 {
+        font-size: 80px;
+        position: relative;
+        top: 290px;
+        right: 50px;
+        float: right;
+        color: #fcfcfc;
+    }
+    .title {
+        font-size: 2vw;
+        color: #0a115b;
+    }
+    .textcontent{
+        font-size: 1.2vw;
+    }
+    .photoabout{
+        width: 25vw;
+        margin-left: 0px;
+        height: 52vh;
+        border-radius:100px;
+    }
+    .abouttext{
+        font-size: 2vw;
+    }
+    .abouttext1{
+        font-size: 1.2vw;
+    }
+    .abouttext2{
+        font-size: 1.2vw;
+        text-align: start;
+        
+    }
+    .containerResume {
+        display: flex;
+        justify-content: space-between;
+        height: 120vh;
+    }
+    .containerResume1 {
+        margin: 50px 100px 0px 160px;    
+    }
+    .textcontent1{
+        font-size: 1.4vw;
+    }
+    .sidebar ul li a i {
+        min-width: 50px;
+        text-align: left;
+        height: 50px;
+        border-radius: 10px;
+        line-height: 50px;
+        font-size: 13px;
+    }
+    .sidebar {
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 70px;
+        background-color: #040B14;
+        padding: 0.4rem 0.8rem;
+        transition: all 0.5s ease;
+        position: fixed;
+    }
+    .user-img {
+        width: 35px;
+        border-radius: 100%;
+        border: 1px solid whitesmoke;
+        margin-top: 15px;
+    }
+    .sidebar ul li a {
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 0.8rem;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .containerPorfolio {
+        display: flex;
+        justify-content: space-between;
+        height: 125vh;
+    }
+    .containerPorfolio1 {
+        margin: 10px 90px 0px 150px;    
+    }
+    .containerContacts {
+        height: 105vh;
+    }
+    .containerContacts1 {
+        margin: 10px 90px 0px 150px;    
+    }
+}
