@@ -282,28 +282,29 @@
     .containerHeader {
         display: flex;
         justify-content: space-between;
-        height: 100vh;
+        height: 70vh;
     }
     .containerAbout {
         display: flex;
         justify-content: space-between;
-        height: 210vh;
+        height: 140vh;
     }
     .containerAbout1 {
-        margin: 0px 10px;
+        margin: 0px 0px;
     }
     
     .profile{
         position: fixed;
         top: 50px;
-        right: 125px;
+        right: 160px;
         width: 50vw;
         border-radius:150px;
-        height: 60vh;
+        height: 50vh;
     }
     
+    
     .sidebar.active {
-        width: 230px;
+        width: 200px;
     }
     
     .sidebar ul li a:hover {
@@ -318,6 +319,7 @@
         margin: 0.8rem auto;
         line-height: 50px;
         margin-top: 10px;
+        
     }
     
     .sidebar .top .logo {
@@ -328,28 +330,29 @@
         align-items: center;
         pointer-events: none;
         opacity: 0;
-        font-size: 10px;
+        font-size: 15px;
+        margin-bottom: 50px;
     }
     
     .user {
         display: flex;
         align-items: center;
         margin: 1rem 0;
-        font-size: 17px;
+        font-size: 15px;
     }
     
     .header_text {
-        font-size: 45px;
+        font-size: 40px;
         position: relative;
-        top: 400px;
-        right: 100px;
+        top: 580px;
+        right: 160px;
         color: #ffffff;
     }
     .header_text1 {
-        font-size: 45px;
+        font-size: 40px;
         position: relative;
-        top: 400px;
-        right: 170px;
+        top: 580px;
+        right: 215px;
         color: #fbfdff;
     }
     .content{
@@ -368,7 +371,7 @@
         height: 60vh;
         border-radius:100px;
         margin-top: 5px;
-        margin-left: 80px;
+        margin-left: 95px;
         margin-bottom: 20px;
     }
     .abouttext{
@@ -381,6 +384,7 @@
         font-size: 2.3vw;
         text-align: center;
     }
+    
     .container2 {
         display: flex;
         justify-content: space-between;
@@ -389,10 +393,10 @@
     .containerResume {
         display: flex;
         justify-content: space-between;
-        height: 205vh;
+        height: 115vh;
     }
     .containerResume1 {
-        margin: 5px 10px 50px 70px;    
+        margin: 5px 10px 20px 70px;    
     }
     .textcontent1{
         font-size: 2.5vw;
@@ -403,14 +407,14 @@
         height: 50px;
         border-radius: 10px;
         line-height: 50px;
-        font-size: 13px;
+        font-size: 15px;
     }
     .sidebar {
         /* position: absolute; */
         top: 0;
         left: 0;
         height: 100vh;
-        width: 65px;
+        width: 60px;
         background-color: #040B14;
         padding: 0.4rem 0.8rem;
         transition: all 0.5s ease;
@@ -427,21 +431,24 @@
         align-items: center;
         text-decoration: none;
         border-radius: 0.8rem;
-        font-size: 13px;
+        font-size: 15px;
+        margin-top:65px ;
     }
-    .containerPorfolio {
+    .containerPorfolio{
         display: flex;
         justify-content: space-between;
-        height: 320vh;
+        height: 170vh;
     }
     .containerPorfolio1 {
-        margin: 10px 30px 0px 90px;    
+        margin: 5px 10px 50px 70px;    
     }
     .containerContacts {
-        height: 200vh;
+        display: flex;
+        justify-content: space-between;
+        height: 80vh;
     }
     .containerContacts1 {
-        margin: 10px 140px 0px 200px;    
+        margin: 0px 0px 0px 70px;    
     }
 
 }
@@ -484,7 +491,7 @@
         margin: 0.8rem auto;
         line-height: 50px;
         font-size: 10px;
-        margin-top: 1px;
+        margin-top: 30px;
     }
     .sidebar .top .logo {
         color: #ffffff;
