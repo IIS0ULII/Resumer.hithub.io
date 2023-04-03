@@ -10,7 +10,6 @@ let modalInfo =[];
 
 // call the actual ID from the HTML element
 const modalEmail = document.getElementById(`modalEmail`);
-const modalText = document.getElementById(`modalText`);
 const modalFullName = document.getElementById(`modalFullName`);
 const modalSubject = document.getElementById(`modalSubject`);
 
@@ -22,7 +21,6 @@ function captureModal(){
     ClientFullName: modalFullName.value,
     ClientEmail :  modalEmail.value,
     ClientLocation :  modalSubject.value,
-    ClientMessage :  modalText.value,
   };
 
   // created variable for calling out the RequestForm inside the local storage 

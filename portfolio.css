@@ -106,12 +106,12 @@
 .containerHeader {
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: 70vh;
 }
 .containerAbout {
     display: flex;
     justify-content: space-between;
-    height: 185vh;
+    height: 130vh;
 }
 .containerAbout1 {
     margin: 0px 0px;
@@ -120,11 +120,12 @@
 .profile{
     position: fixed;
     top: 50px;
-    right: 75px;
+    right: 60px;
     width: 50vw;
     border-radius:150px;
-    height: 60vh;
+    height: 40vh;
 }
+
 
 .sidebar.active {
     width: 150px;
@@ -142,6 +143,7 @@
     margin: 0.8rem auto;
     line-height: 50px;
     margin-top: 10px;
+    
 }
 
 .sidebar .top .logo {
@@ -163,17 +165,17 @@
 }
 
 .header_text {
-    font-size: 35px;
+    font-size: 30px;
     position: relative;
-    top: 420px;
-    right: 30px;
+    top: 380px;
+    right: 10px;
     color: #ffffff;
 }
 .header_text1 {
-    font-size: 35px;
+    font-size: 30px;
     position: relative;
-    top: 420px;
-    right: 80px;
+    top: 380px;
+    right: 45px;
     color: #fbfdff;
 }
 .content{
@@ -192,7 +194,7 @@
     height: 60vh;
     border-radius:100px;
     margin-top: 5px;
-    margin-left: 40px;
+    margin-left: 25px;
     margin-bottom: 20px;
 }
 .abouttext{
@@ -214,10 +216,10 @@
 .containerResume {
     display: flex;
     justify-content: space-between;
-    height: 168vh;
+    height: 95vh;
 }
 .containerResume1 {
-    margin: 5px 10px 50px 70px;    
+    margin: 5px 10px 20px 70px;    
 }
 .textcontent1{
     font-size: 2.5vw;
@@ -257,7 +259,7 @@
 .containerPorfolio{
     display: flex;
     justify-content: space-between;
-    height: 250vh;
+    height: 180vh;
 }
 .containerPorfolio1 {
     margin: 5px 10px 50px 70px;    
@@ -268,8 +270,9 @@
     height: 80vh;
 }
 .containerContacts1 {
-    margin: 10px 0px 0px 70px;    
+    margin: 0px 0px 0px 70px;    
 }
+
 
 
 /* tablet */
@@ -587,7 +590,7 @@
     .containerPorfolio {
         display: flex;
         justify-content: space-between;
-        height: 125vh;
+        height: 115vh;
     }
     .containerPorfolio1 {
         margin: 10px 90px 0px 150px;    
@@ -596,6 +599,10 @@
         height: 105vh;
     }
     .containerContacts1 {
-        margin: 10px 90px 0px 150px;    
+        margin: 10px 80px 0px 120px;    
+    }
+
+    .form{
+        width: 100%;
     }
 }
